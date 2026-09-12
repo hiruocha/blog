@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "willker 的小站",
   description: "一个个人博客",
+  lang: 'zh-CN',
   cleanUrls: true,
   lastUpdated: true,
   themeConfig: {
