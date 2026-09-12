@@ -4,6 +4,8 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "willker 的小站",
   description: "一个个人博客",
+  cleanUrls: true,
+  lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -22,7 +24,10 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/hiruocha' }
-    ]
-  },
-  cleanUrls: true
+    ],
+
+    lastUpdated: {
+      text: '最后更新于'
+    }
+  }
 })
